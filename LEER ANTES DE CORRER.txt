@@ -1,0 +1,10 @@
+EN CASO DE HABER DESCARGADO EL ARCHIVO DESDE GITHUB, SIGA LOS SIGUIENTES PASOS:
+
+1) Añadir plataforma android en consola: ionic platform add android.
+
+2) Instalar en consola:
+   Plugin NativeAudio: cordova plugin add https://github.com/SidneyS/cordova-plugin-nativeaudio.git
+   Plugin Vibration: cordova plugin add cordova-plugin-vibration
+   Plugin Device Motion: cordova plugin add cordova-plugin-device-motion
+
+3) Instalar Driver Motorola ( para los dispositivos Motorola ): https://motorola-global-es-latam.custhelp.com/app/answers/detail/a_id/89882
