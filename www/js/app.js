@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -9,6 +9,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
+	
+	if(window.plugins && window.plugins.NativeAudio)
+	{
+		window.plugins.NativeAudio.preloadSimple('Guardar', 'audio/Guardar.mp3');
+		window.plugins.NativeAudio.preloadSimple('MoverIzquierda', 'audio/MoverIzquierda.mp3');
+		window.plugins.NativeAudio.preloadSimple('MoverArriba', 'audio/MoverArriba.mp3');
+		window.plugins.NativeAudio.preloadSimple('MoverAbajo', 'audio/MoverAbajo.mp3');
+		window.plugins.NativeAudio.preloadSimple('MoverDerecha', 'audio/MoverDerecha.mp3');
+		window.plugins.NativeAudio.preloadSimple('Abajo', 'audio/Abajo.mp3');
+		window.plugins.NativeAudio.preloadSimple('Arriba', 'audio/Arriba.mp3');
+	}
   });
 })
 
