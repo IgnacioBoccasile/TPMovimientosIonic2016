@@ -36,8 +36,8 @@ angular.module('starter.controllers', ['ngCordova'])
 			{
 				if(result.x > 5 && $scope.moverIzquierda==0) 
 				{
-					$cordovaNativeAudio.play('MoverIzquierda');
-					$scope.imagen= "img/Reptile.png";
+					$cordovaNativeAudio.play('IZ');
+					$scope.imagen= "img/CyraxIzquierda.png";
 
 					$scope.voltearArriba=0;
 					$scope.voltearAbajo=0;
@@ -53,8 +53,8 @@ angular.module('starter.controllers', ['ngCordova'])
 				
 				if(result.x < -5 && $scope.moverDerecha==0)
 				{
-					$cordovaNativeAudio.play('MoverDerecha');
-					$scope.imagen= "img/Reptile.png";
+					$cordovaNativeAudio.play('DER');
+					$scope.imagen= "img/CyraxDerecha.png";
 
 					$scope.voltearArriba=0;
 					$scope.voltearAbajo=0;
@@ -66,8 +66,8 @@ angular.module('starter.controllers', ['ngCordova'])
 				
 				if(result.y > 5 && $scope.moverAbajo==0)
 				{
-					$cordovaNativeAudio.play('MoverAbajo');
-					$scope.imagen= "img/Reptile.png";
+					$cordovaNativeAudio.play('AB');
+					$scope.imagen= "img/CyraxAbajo.png";
 
 					$scope.voltearArriba=0;
 					$scope.voltearAbajo=0;
@@ -79,8 +79,8 @@ angular.module('starter.controllers', ['ngCordova'])
 
 				if(result.y < -5 && $scope.moverArriba==0)
 				{
-					$cordovaNativeAudio.play('MoverArriba');
-					$scope.imagen= "img/Reptile.png";
+					$cordovaNativeAudio.play('AR');
+					$scope.imagen= "img/CyraxArriba.png";
 
 					$scope.voltearArriba=0;
 					$scope.voltearAbajo=0;
@@ -92,14 +92,14 @@ angular.module('starter.controllers', ['ngCordova'])
      
 				if(result.x <1 && result.x >-1 && result.y <1 && result.y >-1)
 				{
-					$scope.imagen= "img/Reptile.png";
+					$scope.imagen= "img/CyraxAcostado.png";
 				}
        
 				if(result.z > 10.1 && result.z < 10.9 && $scope.voltearArriba==0)
 				{
 					try
 					{
-						$cordovaNativeAudio.play('Arriba');
+						$cordovaNativeAudio.play('BA');
 					}
 					
 					catch(Exception)
@@ -119,7 +119,7 @@ angular.module('starter.controllers', ['ngCordova'])
 				{
 					try
 					{
-						$cordovaNativeAudio.play('Abajo');
+						$cordovaNativeAudio.play('BAB');
 					}
 					
 					catch(Exception)

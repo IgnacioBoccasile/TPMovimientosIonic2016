@@ -13,12 +13,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 	if(window.plugins && window.plugins.NativeAudio)
 	{
 		window.plugins.NativeAudio.preloadSimple('Guardar', 'audio/Guardar.mp3');
-		window.plugins.NativeAudio.preloadSimple('MoverIzquierda', 'audio/MoverIzquierda.mp3');
-		window.plugins.NativeAudio.preloadSimple('MoverArriba', 'audio/MoverArriba.mp3');
-		window.plugins.NativeAudio.preloadSimple('MoverAbajo', 'audio/MoverAbajo.mp3');
-		window.plugins.NativeAudio.preloadSimple('MoverDerecha', 'audio/MoverDerecha.mp3');
-		window.plugins.NativeAudio.preloadSimple('Abajo', 'audio/Abajo.mp3');
-		window.plugins.NativeAudio.preloadSimple('Arriba', 'audio/Arriba.mp3');
+		window.plugins.NativeAudio.preloadSimple('IZ', 'audio/IZ.mp3');
+		window.plugins.NativeAudio.preloadSimple('AR', 'audio/AR.mp3');
+		window.plugins.NativeAudio.preloadSimple('AB', 'audio/AB.mp3');
+		window.plugins.NativeAudio.preloadSimple('DER', 'audio/DER.mp3');
+		window.plugins.NativeAudio.preloadSimple('BAB', 'audio/BAB.mp3');
+		window.plugins.NativeAudio.preloadSimple('BA', 'audio/BA.mp3');
 	}
   });
 })
